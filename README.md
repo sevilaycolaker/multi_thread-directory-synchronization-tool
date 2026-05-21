@@ -19,7 +19,7 @@ Bağımlılıklar: `gcc`, `make`, POSIX threads (Linux / Unix).
 Örnek:
 
 ```bash
-./copy_tool 4 ./kaynak_klasor ./hedef_klasor
+./copy_tool 4 ./source_dir ./dest_dir
 ```
 
 Tüm işlemler, çalıştırdığın dizindeki `copy_tool.log` dosyasına timestamp ve thread ID ile birlikte yazılır.
@@ -100,8 +100,8 @@ Gerçek ölçüm sonuçları (300 dosya, ~285 MB, SSD, temiz cache, iki çalış
 │   ├── scanner.c
 │   ├── worker.c
 │   └── log.c
-├── kaynak_klasor/      # Test kaynak dizini
-└── hedef_klasor/       # Test hedef dizini
+├── source_dir/         # Test source directory
+└── dest_dir/           # Test destination directory
 ```
 
 ## Temizleme
